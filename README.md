@@ -13,7 +13,6 @@ This project focuses on classifying chess pieces using machine learning models, 
 - [Evaluation](#evaluation)
 - [Results](#results)
 - [Acknowledgments](#acknowledgments)
-- [License](#license)
 
 ## Introduction
 
@@ -104,4 +103,27 @@ Example command:
 ```bash
 eval_result = model_DenseNet201.evaluate(validation_generator)
 print("Validation Accuracy:", eval_result[1])
+
+```
+
+## Results
+
+### Model Performance
+
+After evaluating the trained models, DenseNet201 demonstrated the highest accuracy among the models, achieving an accuracy of 90%. This indicates that DenseNet201 performed exceptionally well in classifying chess pieces on the validation set.
+
+
+## Acknowledgments
+
+This project has been made possible through the contributions and support of various individuals and organizations. We extend our sincere thanks to:
+
+- **Kaggle Community:** For providing the Chessman Image Dataset used in this project. The Kaggle community has been instrumental in fostering a collaborative environment for data science and machine learning.
+
+- **TensorFlow and Keras Developers:** We express our appreciation to the developers of TensorFlow and Keras for creating powerful deep learning frameworks that facilitated the implementation of complex models in this project.
+
+- **Colab Notebooks:** The project extensively utilized Google Colab Notebooks for its ease of use and access to GPU resources. Colab greatly accelerated model training and experimentation.
+
+- **Open Source Contributors:** Many open-source libraries and tools have played a crucial role in the development of this project. We are grateful for the efforts of the open-source community that continually contributes to the field of machine learning.
+
+
 
