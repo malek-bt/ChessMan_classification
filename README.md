@@ -94,6 +94,7 @@ history = model_DenseNet201.fit(
     callbacks=[early_stopping]
 )
 
+```
 ## Evaluation
 
 Evaluate the performance of the trained models using the testing dataset. The evaluation script computes metrics such as accuracy, precision, recall, and F1 score. Run the evaluation script to obtain performance metrics and analyze the model's effectiveness.
