@@ -13,6 +13,7 @@ This project focuses on classifying chess pieces using machine learning models, 
 - [Evaluation](#evaluation)
 - [Results](#results)
 - [Acknowledgments](#acknowledgments)
+- [Future Work](#futureWork)
 
 ## Introduction
 
@@ -110,7 +111,7 @@ print("Validation Accuracy:", eval_result[1])
 
 ### Model Performance
 
-After evaluating the trained models, DenseNet201 demonstrated the highest accuracy among the models, achieving an accuracy of 90%. This indicates that DenseNet201 performed exceptionally well in classifying chess pieces on the validation set.
+After evaluating the trained models, DenseNet201 demonstrated the highest accuracy among the models, achieving an accuracy of 84%. This indicates that DenseNet201 performed exceptionally well in classifying chess pieces on the validation set.
 
 
 ## Acknowledgments
@@ -125,5 +126,35 @@ This project has been made possible through the contributions and support of var
 
 - **Open Source Contributors:** Many open-source libraries and tools have played a crucial role in the development of this project. We are grateful for the efforts of the open-source community that continually contributes to the field of machine learning.
 
+
+## Testing
+
+To test the trained models on new images, follow the steps below:
+
+1. **Add a New Model:**
+   - If you have a new model you'd like to test, make sure the model is saved in a compatible format (e.g., Keras model in HDF5 format).
+
+2. **Download or Prepare a New Image:**
+   - Select or obtain an image that you want to use for testing. Ensure that the image is in a supported format (e.g., JPEG or PNG).
+
+3. **Update the Test Code:**
+   - Open the provided test script or code snippet 
+   - Locate the section where the model is loaded, and update the model path to point to your new model.
+
+   ```python
+   # Load the saved model (update the model path)
+   loaded_model = load_model('/path/to/your/new_model.h5')
+   ```
+
+## Future Work
+
+While the current version of the Chess Men Classification project has achieved notable success, there are opportunities for further improvement and expansion. Future work may include:
+
+- Fine-tuning hyperparameters for even better model performance.
+- Exploring additional pre-trained models or architectures to compare and enhance classification accuracy.
+- Implementing more advanced techniques, such as transfer learning from related domains or experimenting with ensemble methods.
+- Collaborating with the community to gather additional labeled data or contributing to open-source initiatives in image classification.
+
+We welcome contributions and ideas from the community to further advance this project.
 
 
